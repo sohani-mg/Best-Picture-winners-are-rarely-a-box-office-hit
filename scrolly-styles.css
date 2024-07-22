@@ -1,16 +1,18 @@
 /* Target specific images in #scrolly-images */
 #scrolly-images .sticky-thing img {
-    max-width: 50%; /* Adjust the width as needed */
-    display: block;
-    margin: auto; /* Centers the image horizontally */
-  }
-  
-  /* Ensures images within #scrolly-images are sized correctly */
-  #scrolly-images img {
-    max-width: 100%; /* Ensures image does not exceed its container's width */
-    display: block; /* Ensures margin auto works to center the image */
-    margin: auto; /* Centers the image horizontally */
-  }
+  max-width: 55%; /* Adjust the width as needed */
+  display: block;
+  margin: auto; /* Centers the image horizontally */
+  padding-top: 4em;
+}
+
+/* Ensures images within #scrolly-images are sized correctly */
+  /* #scrolly-images img {
+  max-width: 100%; /* Ensures image does not exceed its container's width */
+    /* display: block; /* Ensures margin auto works to center the image */
+    /* margin: auto; /* Centers the image horizontally */
+    /* padding-top: 4em;
+}
   
   /* Additional styles as needed */
   .scrolly-container {
