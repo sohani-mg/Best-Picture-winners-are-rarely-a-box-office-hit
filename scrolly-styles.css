@@ -1,0 +1,89 @@
+/* Target specific images in #scrolly-images */
+#scrolly-images .sticky-thing img {
+    max-width: 60%; /* Adjust the width as needed */
+    display: block;
+    margin: auto; /* Centers the image horizontally */
+  }
+  
+  /* Ensures images within #scrolly-images are sized correctly */
+  #scrolly-images img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    display: block; /* Ensures margin auto works to center the image */
+    margin: auto; /* Centers the image horizontally */
+  }
+  
+  /* Additional styles as needed */
+  .scrolly-container {
+    position: relative;
+    margin-bottom: 1.2em;
+  }
+  
+  .sticky-thing {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .steps-container {
+    transform: translate3d(0,0,0);
+    position: relative;
+    padding: 0;
+    z-index: 10;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-bottom: 4em;
+  }
+  
+  .step {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50svh; /* Note: Correct the typo in '50svh' to '50vh' */
+    transform: translate(0px, 0px);
+  }
+  
+  .step p {
+    text-align: left;
+  }
+  
+  .step p:last-child {
+    padding: 0;
+  }
+  
+  .step > * {
+    width: 700px;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    text-align: center;
+    padding: 1.2em !important;
+    background-color: #EFD27F;
+  }
+  
+  /* When it's less than 700 pixels wide, do normal scrollytelling */
+  @media only screen and (max-width: 700px) {
+    .scrolly-container.side-by-side {
+      display: flex;
+    }
+  
+    .scrolly-container.side-by-side > div {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75em;
+    }
+  
+    .scrolly-container.side-by-side .scrolly-overlay {
+      margin-top: 70vh; /* Change as needed */
+      order: 0;
+      /* Change these to adjust sizing options */
+      min-width: 15rem;
+      max-width: 20rem;
+    }
+  
+    .scrolly-container.side-by-side .sticky-thing {
+      order: 1;
+      flex-grow: 2;
+    }
+  }
+  
