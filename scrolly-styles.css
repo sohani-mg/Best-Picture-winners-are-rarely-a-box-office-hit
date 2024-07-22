@@ -1,6 +1,6 @@
 /* Target specific images in #scrolly-images */
 #scrolly-images .sticky-thing img {
-    max-width: 60%; /* Adjust the width as needed */
+    max-width: 50%; /* Adjust the width as needed */
     display: block;
     margin: auto; /* Centers the image horizontally */
   }
